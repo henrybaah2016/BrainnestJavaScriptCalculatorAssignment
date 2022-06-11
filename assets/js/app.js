@@ -64,7 +64,6 @@ function updateDisplay(e) {
   }
 }
 
-// runs whenever operator is clicked and save operation to global variable;
 function handleOperation(e) {
   number1 = displayValue;
   displayValue += e.target.innerHTML;
@@ -75,9 +74,7 @@ function handleOperation(e) {
   }
 }
 
-const clickLastEntry = () => {
-  clearLastEntry.click();
-}
+
 
 // Events
 numberKeys.forEach(numberKey =>
@@ -93,8 +90,8 @@ clearButton.addEventListener('click', e => {
 });
 equalButton.addEventListener('click', () => {
   // set number 2 to be either the first number after the operation or the first number after the first operation(before the equal operator)
-  // number2 =
-  //   number2 || displayValue.replace(number1, '').match(/[^\+|\-|\*|\/]\d*/);
+  number2 =
+    number2 || displayValue.replace(number1, '').match(/[^\+|\-|\*|\/]\d*/);
   result = operate(operation, number1, number2);
   output.innerHTML = result % 1 ? Number(result.toFixed(4)) : result;
   operation = '';

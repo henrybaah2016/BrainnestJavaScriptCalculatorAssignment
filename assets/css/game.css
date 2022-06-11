@@ -1,0 +1,39 @@
+
+/* Game CSS */
+body {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #ffffff;
+  }
+  
+.btn{
+    width:100px;
+    height:50px;
+    background-color:rgb(12, 129, 197);
+    color:#ffffff;
+    border:0;
+    
+}
+.gameTeam{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.team{
+    margin:20px;
+    align-items: center;
+    justify-content: center;
+
+}
+.btnReset{
+    width:100px;
+    height:50px;
+    background-color:rgb(0, 0, 0);
+    color:#ffffff;
+    border:0;
+    margin-top:20px;
+}

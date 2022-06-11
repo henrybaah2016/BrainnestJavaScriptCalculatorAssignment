@@ -45,7 +45,6 @@ let isOperatorPressed = false;
 let result = 0;
 
 // Functions
-
 function init() {
   number1 = 0;
   number2 = 0;

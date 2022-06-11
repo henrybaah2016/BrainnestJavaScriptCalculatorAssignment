@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game UI</title>
+    <link rel="stylesheet" href="assets/css/game.css" />
+</head>
+<body>
+    <div class="mainOption">
+        <button class="btn" id="0">Paper</button>
+        <button class="btn" id="1">Scissor</button>
+        <button class="btn" id="2">Rock</button>
+    </div>
+    <div class="gameTeam"> 
+        <div class="team">
+            <h3 id="playerLabel">Player</h3>
+            <h2 id="computerScore"></h2>
+        </div>
+        <div class="team">
+            <h3 id="compLabel">Computer</h3>
+            <h2 id="playerScore"></h2>
+        </div>
+    </div>
+    <div class="gameTeam">
+       
+        <div class="team">
+            <h3 id="resultsLabel">Outcome</h3>
+            <h2 id="roundResults"></h2>
+        </div>
+
+    </div>
+    <div class="gameTeam">
+        <div>
+            <button class="btnReset" id="reset">Play Again!</button>
+        </div>
+    </div>
+</body>
+
+<script src="assets/js/game.js"></script>
+</html>
